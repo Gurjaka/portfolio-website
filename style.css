@@ -3,7 +3,7 @@
 body {
   font-family: "Fira Code";
   font-weight: Medium;
-  background-color: #232a2e;  
+  background-color: #2e3440;  
 }
 
 @keyframes glow-animation {
@@ -25,7 +25,7 @@ header {
 nav {
   font-style: bold;
   font-size: 20px;
-  color: #e67e80;
+  color: #d8dee9;
 }
 
 .topleft {
@@ -37,10 +37,22 @@ nav {
 }
 
 .topright {
-  text-shadow: 0 0 2px;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 8px;
   position: absolute;
   top: 8px;
   right: 16px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #4c566a;
+  border-radius: 12px;
+}
+
+.topright:hover {
+  border-color: #bf616a;
 }
 
 main {
@@ -71,9 +83,14 @@ main {
   height: 150px;
 }
 
-h1,h2 {
+.splash h1 {
   text-shadow: 0 0 20px;
-  color: #7fbbb3;
+  color: #81a1c1;
+}
+
+.splash h2 {
+  text-shadow: 0 0 20px;
+  color: #88c0d0;
 }
 
 .buttons {
@@ -90,14 +107,63 @@ button {
   border-radius: 6px;
 }
 
-.about-me {
-  color: #232a2e;
-}
-
 .Github {
-  box-shadow: 0 0 30px #7fbbb3;
+  box-shadow: 0 0 30px #81a1c1;
   background: #232a2e;
   color: #d8dee9;
-  border: 2px solid #7fbbb3;
+  border: 2px solid #81a1c1;
+  cursor: pointer;
   animation: glow-animation 2s infinite alternate;
 }
+
+main {
+  /* margin-top: 80px; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(45deg, #3a515d, #4c566a); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.About-me {
+  position: relative;
+  margin-top: 50px;
+  width: 98%;
+  height: 50%;
+  align-items: left;
+  text-align: left;
+  border: 2px solid #4c566a;
+  border-radius: 16px;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.About-me h1 {
+  font-weight: bold;
+  font-size: 32px;
+  padding: 20px;
+  padding-top: 0px;
+  color: #d8dee9;
+  animation: glow-animation 3s infinite alternate;
+}
+
+.About-me p {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  padding-top: 0px;
+  color: #d8dee9;
+}
+
+.About-me:hover {
+  border-color: #5e81ac; 
+  transition: border-color 0.3s ease;
+}
+.About-me:hover h1,
+.About-me:hover p { 
+  color: #81a1c1;
+  transition: color 0.3s ease;
+}
+
