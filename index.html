@@ -8,18 +8,30 @@
 </head>
 <body>
   <header>
-    <nav> 
-      <div class="topleft"> 
-	<b >Gurjaka</b>
+    <nav class="navigation-bar"> 
+      <div class="topleft">
+	<b>Gurjaka</b>
       </div>
       <div class="topright">
-	<b >HOME</b>
-	<b >PROJECTS</b>
-	<b >TOOLS/FRAMEWORKS</b>
+	<a href="#home">
+	  <b class="button--big">Home</b>
+	</a>
+	<a href="#aboutme">
+	  <b class="button--big">AboutMe</b>
+	</a>
+	<a href="#skills_and_technologies">
+	  <b class="button--big">Skills & Technologies</b>
+	</a>
+	<a href="#projects">
+	  <b class="button--big">Projects</b>
+	</a>
+	<a href="#timeline">
+	  <b class="button--big">Timeline</b>
+	</a>
       </div>
     </nav>
   </header>
-  <main id="top">
+  <main id="home">
     <div class="splash">
       <img class="profile-picture" src="https://avatars.githubusercontent.com/u/143032436?v=4">
       <h1>Hi there!👋 I'm Gurjaka</h1>
@@ -29,11 +41,108 @@
       </a>
     </div>
   </main>
-  <main id="info">
-    <div class="About-me">
-      <h1>About Me</h1>
-      <p>Hi! I'm Gurjaka, a passionate developer and tech enthusiast. </p>
-      <p>Currently, I love exploring new technologies and working on personal projects to further improve my education.</p>
+  <main id="aboutme">
+    <div class="about-me">
+      <h1>👨‍💻 About Me</h1>
+    </div>
+    <div class="general-info">
+      <h1>General information</h1>
+      <p><b>Hi! 👋 I'm Gurjaka,</b> a passionate developer 👨‍💻 and tech enthusiast 🚀.</p>
+      <p>Currently, I love exploring new technologies 💡 and working on personal projects 🛠️ to further improve my education 📚.</p>
+    </div>
+  </main>
+  <main id="skills_and_technologies">
+   <div class="skills">
+      <h1>💻 Skills and Technologies</h1>
+    </div>
+    <div class="programming-languages">
+      <h1>🛠️ Programming Languages:</h1>
+      <p><b>Python</b> 🐍: My go-to language for writing scripts, developing applications, and building automation solutions.<br>Python’s versatility makes it perfect for everything from web development to machine learning.</p>
+      <p><b>JavaScript</b> 💻: Essential for front-end development and making websites interactive.<br>I've been using JavaScript to create dynamic, responsive, and engaging user interfaces.</p>
+      <p><b>Nix</b> ❄️: A declarative language for configuring environments and packages.<br>I love how it simplifies reproducibility and dependency management across projects.</p>
+    </div>
+    <div class="tools">
+      <h1>🔧 Tools and Frameworks:</h1>
+      <p><b>Linux</b> 🐧: My preferred operating system for development, providing a robust environment for programming and server management.</p>
+      <p><b>NixOS</b> ❄️: A Linux distribution that leverages the Nix package manager, allowing for declarative configurations and reliable builds.</p>
+      <p><b>Qtile</b> 🐍: A dynamic tiling window manager that provides a highly customizable environment tailored to my workflow.</p>
+      <p><b>ZSH</b> 🐚: An interactive shell that enhances productivity with powerful features and customizable plugins.</p>
+      <p><b>Fish</b> 🐚: A user-friendly shell with an intuitive syntax that improves my command-line experience.</p>
+      <p><b>Tmux</b> 🔨: A terminal multiplexer that allows me to manage multiple terminal sessions easily, improving my workflow and efficiency.</p>
+      <p><b>Neovim</b> 🖥️: An advanced text editor that I use for coding and configuration, enhancing my productivity and workflow with powerful plugins and features.</P>
+    </div>
+  </main>
+  <main id="projects">
+    <div class="top-projects">
+      <h1>🚀 My top projects</h1>
+    </div>
+    <div class="dotfiles">
+      <h2>❄️ Nixos Dotfiles</h2>
+      <p>Personal configuration files for NixOS, tailored to create an efficient and productive development environment. <a href="https://github.com/Gurjaka/Dotfiles">Visit Github</a></p>
+    </div>
+    <div class="weather-cli">
+      <h2>🌦️ Weather CLI</h2>
+      <p>This tool provides quick and easy access to current weather information directly from your terminal. <a href="https://github.com/Gurjaka/Weather-Cli">Visit Github</a></p>
+    </div>
+    <div class="d100">
+      <h2>📅 Python Projects Roadmap</h2>
+      <p>The "Python Projects Roadmap" is designed to guide learners through a structured journey of mastering Python, one project at a time. This roadmap breaks down the learning process into clear stages, helping students progressively build their skills across various domains. It covers a wide array of project categories, from beginner to advanced levels, allowing users to tackle challenges at their own pace. <a href="https://github.com/Gurjaka/Python-Projects-Roadmap">Visit Github</a></p>
+    </div>
+  <main>
+  <main id="timeline">
+    <div class="title">
+      <h1>🚀 My Jourtney</h1>
+      <p>🗓️ Timeline for projects that I've done</p>
+    </div>
+    <div class="timeline">
+      <div class="checkpoint">
+	<div>
+	  <h2>🐍 Python-Projects</h2>
+	  <p>This repository contains a collection of my Python homework assignments, showcasing my learning progress and practical applications of various programming concepts. Each project highlights specific skills and techniques, ranging from basic programming constructs to more advanced topics. <a style='font-weight: bold; color: #bf616a;' href="https://github.com/Gurjaka/python-projects">Visit Github</a></p>
+	</div>
+      </div>
+      <div class="checkpoint">
+	<div>
+	  <h2>💻 Arch-linux-Install-guide</h2>
+	  <p>This guide provides a streamlined approach to installing Arch Linux, tailored for users who may find the official documentation overwhelming. Designed for both beginners and experienced users, this resource simplifies the installation process while maintaining the flexibility and power that Arch Linux offers. <a style='font-weight: bold; color: #bf616a;' href="https://github.com/Gurjaka/arch-linux-install-guide">Visit Github</a></p>
+	</div>
+      </div>
+      <div class="checkpoint">
+	<div>
+	  <h2>❄️ Nixos Dotfiles</h2>
+	  <p>This repository contains my personal dotfiles for NixOS, showcasing my system configuration and preferences. These dotfiles serve as a tailored setup to enhance my productivity and streamline my workflow in a NixOS environment. <a style='font-weight: bold; color: #bf616a;' href="https://github.com/Gurjaka/dotfiles">Visit Github</a></p>
+	</div>
+      </div>
+      <div class="checkpoint">
+	<div>
+	  <h2>🌦️ Weather Cli</h2>
+	  <p>The Weather CLI is a command-line tool designed to provide real-time weather information for any location worldwide. This lightweight and user-friendly application offers a simple way to access current weather conditions and forecasts directly from your terminal. <a style='font-weight: bold; color: #bf616a;' href="https://github.com/Gurjaka/weather-cli">Visit Github</a></p>
+	</div>
+      </div>
+      <div class="checkpoint">
+	<div>
+	  <h2>📝 Multi Clipboard</h2>
+	  <p>Simple multi-clipboard program written in Python that allows users to quickly copy predefined text snippets to their clipboard using keyphrases. Utilizing the pyperclip library, this command-line utility enhances productivity by streamlining the process of copying frequently used phrases or responses. <a style='font-weight: bold; color: #bf616a;' href="https://github.com/Gurjaka/multi-clipboard">Visit Github</a></p>
+	</div>
+      </div>
+      <div class="checkpoint">
+	<div>
+	  <h2>📚 Vim Cheatsheet</h2>
+	  <p>This Vim Cheatsheet is a comprehensive reference designed to help users navigate and utilize the powerful features of Vim, the popular text editor known for its efficiency and flexibility. Whether you're a beginner or an experienced user, this cheatsheet condenses essential commands and shortcuts into an easily accessible format. <a style='font-weight: bold; color: #bf616a;' href="https://github.com/Gurjaka/vim-cheatsheet">Visit Github</a></p>
+	</div>
+      </div>
+      <div class="checkpoint">
+	<div>
+	  <h2>📅 Python Projects Roadmap</h2>
+	  <p>The "Python Projects Roadmap" is designed to guide learners through a structured journey of mastering Python, one project at a time. This roadmap breaks down the learning process into clear stages, helping students progressively build their skills across various domains. It covers a wide array of project categories, from beginner to advanced levels, allowing users to tackle challenges at their own pace. <a style='font-weight: bold; color: #bf616a;' href="https://github.com/Gurjaka/Python-Projects-Roadmap">Visit Github</a></p>
+	</div>
+      </div>
+      <div class="checkpoint">
+	<div>
+	  <h2>💼 Portfolio Website</h2>
+	  <p>Portfolio website, a showcase of my skills, projects, and experiences as a developer and tech enthusiast. This site serves as a digital resume, highlighting my journey in the world of programming and technology. <a style='font-weight: bold; color: #bf616a;' href="https://github.com/Gurjaka/portfolio-website">Visit Github</a></p>
+	</div>
+      </div>
     </div>
   </main>
 </body>
